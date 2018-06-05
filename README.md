@@ -32,7 +32,7 @@ Just do:
 ```
 
 ```
-    docker run --name wetty-server -p 3000:3000 -t docker.in.ruguoapp.com/wetty:latest
+    docker run --name wetty-server -p 3000:3000 -e sshhost="yourhost" -t docker.in.ruguoapp.com/wetty:latest
 ```
 
 Visit the appropriate URL in your browser (`[localhost|$(boot2docker ip)]:PORT`).
